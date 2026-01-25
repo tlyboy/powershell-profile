@@ -13,7 +13,7 @@ function i {
         [string]$DirectoryName
     )
 
-    Set-Location -Path "~\i\$DirectoryName"
+    Set-Location -Path "$HOME\i\$DirectoryName"
 }
 
 fnm completions --shell powershell | Out-String | Invoke-Expression
